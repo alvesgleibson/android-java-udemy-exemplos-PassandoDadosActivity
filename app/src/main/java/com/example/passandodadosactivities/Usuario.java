@@ -1,6 +1,9 @@
 package com.example.passandodadosactivities;
 
-public class Usuario {
+import java.io.Serializable;
+
+//Temos que implements Serializable para converter o obj em Bits
+public class Usuario implements Serializable {
 
     private String nome, email;
 

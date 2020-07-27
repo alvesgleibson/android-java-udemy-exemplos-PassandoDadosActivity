@@ -24,18 +24,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent = new Intent(getApplicationContext(), SegundaActivity.class);
+                Usuario usuario = new Usuario("Gleibson Alves", "alvesgleibson@gmail.com");
 
                 //Passar Dados entre Activity
-                intent.putExtra("nome2","Mylena Alves");
-                intent.putExtra("idade2",28);
+                intent.putExtra("nome2", "Mylena Alves");
+                intent.putExtra("idade2", 28);
+                intent.putExtra("obj", usuario);
 
                 startActivity(intent);
             }
         });
 
     }
-
-
 
 
 }
